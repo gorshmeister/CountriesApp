@@ -1,4 +1,4 @@
-package ru.gorshenev.testcountries.data
+package ru.gorshenev.testcountries.data.network
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

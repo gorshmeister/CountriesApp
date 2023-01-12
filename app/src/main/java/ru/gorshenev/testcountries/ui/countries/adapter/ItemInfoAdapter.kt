@@ -1,11 +1,11 @@
-package ru.gorshenev.testcountries.countries.adapter
+package ru.gorshenev.testcountries.ui.countries.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ru.gorshenev.testcountries.R
-import ru.gorshenev.testcountries.countries.CountryUi
+import ru.gorshenev.testcountries.ui.model.CountryUi
 import ru.gorshenev.testcountries.databinding.ItemCountryBinding
 
 class CountriesAdapter(private val onClick: () -> Unit) :

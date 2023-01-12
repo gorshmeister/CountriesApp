@@ -1,10 +1,11 @@
-package ru.gorshenev.testcountries
+package ru.gorshenev.testcountries.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import by.kirich1409.viewbindingdelegate.viewBinding
-import ru.gorshenev.testcountries.countries.CountriesFragment
+import ru.gorshenev.testcountries.R
 import ru.gorshenev.testcountries.databinding.ActivityMainBinding
+import ru.gorshenev.testcountries.ui.countries.CountriesFragment
 
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by viewBinding()

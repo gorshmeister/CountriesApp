@@ -1,4 +1,4 @@
-package ru.gorshenev.testcountries.data
+package ru.gorshenev.testcountries.data.network
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
