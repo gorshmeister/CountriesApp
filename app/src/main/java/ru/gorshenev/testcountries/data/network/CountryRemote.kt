@@ -6,17 +6,17 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class CountryRemote(
     @SerialName("name")
-    val name: String,
+    val name: String? = null,
     @SerialName("region")
-    val region: String,
+    val region: String? = null,
     @SerialName("capital")
-    val capital: String,
+    val capital: String? = null,
     @SerialName("flags")
-    val flag: Flag,
+    val flag: Flag? = null,
     @SerialName("currencies")
-    val currencies: List<Currency>,
+    val currencies: List<Currency> = emptyList(),
     @SerialName("timezones")
-    val timeZones: List<String>
+    val timeZones: List<String> = emptyList()
 )
 
 @Serializable
@@ -28,7 +28,7 @@ data class Flag(
 @Serializable
 data class Currency(
     @SerialName("code")
-    val code: String,
+    val code: String? = null,
     @SerialName("symbol")
-    val symbol: String
+    val symbol: String? = null
 )

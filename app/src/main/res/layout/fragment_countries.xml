@@ -9,8 +9,8 @@
         android:id="@+id/rv_countries"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:itemCount="20"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="20"
         tools:listitem="@layout/item_country" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -21,5 +21,27 @@
         android:text="@string/refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:text="@string/error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
