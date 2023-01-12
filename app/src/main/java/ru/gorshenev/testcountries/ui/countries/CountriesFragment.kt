@@ -15,6 +15,7 @@ import ru.gorshenev.testcountries.R
 import ru.gorshenev.testcountries.databinding.FragmentCountriesBinding
 import ru.gorshenev.testcountries.di.GlobalDI
 import ru.gorshenev.testcountries.ui.countries.adapter.CountriesAdapter
+import ru.gorshenev.testcountries.ui.countryinfo.CountryInfoFragment
 
 class CountriesFragment : Fragment(R.layout.fragment_countries) {
     private val binding: FragmentCountriesBinding by viewBinding()
@@ -61,6 +62,16 @@ class CountriesFragment : Fragment(R.layout.fragment_countries) {
     }
 
     private fun onCountryClick(item: CountryUi) {
-
+        parentFragmentManager.beginTransaction().add(
+            R.id.container, CountryInfoFragment.newInstance(
+                name = item.name,
+                region = item.region,
+                capital = item.capital,
+                flagUrl = item.flagUrl,
+                currencies = item.currencies,
+                timeZones = item.timeZones
+            )
+        ).addToBackStack(null)
+            .commit()
     }
 }

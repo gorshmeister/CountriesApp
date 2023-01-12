@@ -3,20 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_flag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
         tools:src="@tools:sample/avatars" />
 
     <include
         android:id="@+id/layout_name"
-        layout="@layout/layout_cell"
-
-        />
+        layout="@layout/layout_cell" />
 
     <include
         android:id="@+id/layout_region"
@@ -24,9 +25,7 @@
 
     <include
         android:id="@+id/layout_capital"
-        layout="@layout/layout_cell"
-
-        />
+        layout="@layout/layout_cell" />
 
     <include
         android:id="@+id/layout_currency"

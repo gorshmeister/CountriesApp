@@ -26,7 +26,7 @@ class CountriesViewModel(private val repository: CountriesRepository) : ViewMode
                 _states.emit(CountriesState.Loading)
                 val items = repository.getAllCountries().map { it.toUi() }
                 _states.emit(CountriesState.Content(items))
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 Log.d("qwe", "loadCountries: ${e.stackTraceToString()}")
                 _states.emit(CountriesState.Error)
             }

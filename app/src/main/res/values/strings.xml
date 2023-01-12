@@ -2,4 +2,9 @@
     <string name="app_name">testCountries</string>
     <string name="refresh">Refresh</string>
     <string name="error">Что-то пошло не так, попробуйте еще раз</string>
+    <string name="country_name">Название</string>
+    <string name="region">Регион</string>
+    <string name="capital">Столица</string>
+    <string name="currency">Валюта</string>
+    <string name="timezone">Timezone</string>
 </resources>

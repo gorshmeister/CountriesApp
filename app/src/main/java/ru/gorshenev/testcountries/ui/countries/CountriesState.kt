@@ -1,5 +1,6 @@
 package ru.gorshenev.testcountries.ui.countries
 
+import kotlinx.serialization.Serializable
 import ru.gorshenev.testcountries.data.network.CountryRemote
 
 sealed class CountriesState {
@@ -7,7 +8,6 @@ sealed class CountriesState {
     object Error : CountriesState()
     data class Content(val items: List<CountryUi>) : CountriesState()
 }
-
 data class CountryUi(
     val name: String,
     val region: String,
